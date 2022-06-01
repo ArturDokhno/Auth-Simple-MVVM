@@ -22,13 +22,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
-       print("Artur IOS Developer")
+        viewModel.userButtonPressed(login: (loginTextField.text ?? ""),
+                                    password: (passwordTextField.text ?? ""))
     }
     
     func bindViewModel() {
         viewModel.statusText.bind({ (statusText) in
             DispatchQueue.main.async {
                 self.statusLabel.text = statusText
+            }
+        })
+        viewModel.statusColor.bind({ (statusColor) in
+            DispatchQueue.main.async {
+                self.statusLabel.textColor = statusColor
             }
         })
     }
