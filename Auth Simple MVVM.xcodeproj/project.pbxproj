@@ -67,7 +67,6 @@
 				759774C02847968700C76917 /* Models */,
 				759774AC2847954500C76917 /* AppDelegate.swift */,
 				759774AE2847954500C76917 /* SceneDelegate.swift */,
-				759774B02847954500C76917 /* ViewController.swift */,
 				759774B52847954700C76917 /* Assets.xcassets */,
 				759774BA2847954700C76917 /* Info.plist */,
 			);
@@ -85,6 +84,7 @@
 		759774C2284796B700C76917 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				759774B02847954500C76917 /* ViewController.swift */,
 				759774C42847971000C76917 /* Storyboard */,
 			);
 			path = Views;
