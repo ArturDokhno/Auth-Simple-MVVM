@@ -9,6 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet var loginTextField: UITextField!
+    @IBOutlet var passwordTextField: UITextField!
+    @IBOutlet var statusLabel: UILabel!
+    
     var viewModel = ViewModel()
 
     override func viewDidLoad() {
@@ -16,11 +20,15 @@ class ViewController: UIViewController {
         
         bindViewModel()
     }
-
+    
+    @IBAction func loginButtonPressed(_ sender: Any) {
+       print("Artur IOS Developer")
+    }
+    
     func bindViewModel() {
         viewModel.statusText.bind({ (statusText) in
             DispatchQueue.main.async {
-                print(statusText)
+                self.statusLabel.text = statusText
             }
         })
     }
