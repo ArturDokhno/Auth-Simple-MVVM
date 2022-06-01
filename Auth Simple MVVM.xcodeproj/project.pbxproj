@@ -14,6 +14,8 @@
 		759774B62847954700C76917 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759774B52847954700C76917 /* Assets.xcassets */; };
 		759774B92847954700C76917 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 759774B72847954700C76917 /* LaunchScreen.storyboard */; };
 		759774C62847974300C76917 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759774C52847974300C76917 /* User.swift */; };
+		759774C8284797E700C76917 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759774C7284797E700C76917 /* ViewModel.swift */; };
+		759774CB2847984700C76917 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759774CA2847984700C76917 /* Dynamic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		759774B82847954700C76917 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		759774BA2847954700C76917 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		759774C52847974300C76917 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		759774C7284797E700C76917 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		759774CA2847984700C76917 /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 		759774C3284796D400C76917 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				759774C92847983300C76917 /* Bindings */,
+				759774C7284797E700C76917 /* ViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -100,6 +106,14 @@
 				759774B72847954700C76917 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		759774C92847983300C76917 /* Bindings */ = {
+			isa = PBXGroup;
+			children = (
+				759774CA2847984700C76917 /* Dynamic.swift */,
+			);
+			path = Bindings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +190,9 @@
 				759774C62847974300C76917 /* User.swift in Sources */,
 				759774B12847954500C76917 /* ViewController.swift in Sources */,
 				759774AD2847954500C76917 /* AppDelegate.swift in Sources */,
+				759774CB2847984700C76917 /* Dynamic.swift in Sources */,
 				759774AF2847954500C76917 /* SceneDelegate.swift in Sources */,
+				759774C8284797E700C76917 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
