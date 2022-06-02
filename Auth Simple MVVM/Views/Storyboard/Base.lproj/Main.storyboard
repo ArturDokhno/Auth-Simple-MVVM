@@ -257,6 +257,12 @@
                             <constraint firstItem="Iuv-NT-0xb" firstAttribute="trailing" secondItem="aUi-Xe-1Fx" secondAttribute="trailing" constant="20" id="xbg-Hg-hbf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLabel" destination="e2E-0u-G61" id="E13-vV-61L"/>
+                        <outlet property="emailLabel" destination="h0T-UN-sjL" id="Vqx-wB-Kt5"/>
+                        <outlet property="nameLabel" destination="rK0-uN-kQx" id="S4G-X7-YPU"/>
+                        <outlet property="phoneLabel" destination="hmI-TD-5Lz" id="k0r-1h-kQV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAx-Hh-0sC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

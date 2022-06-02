@@ -14,7 +14,7 @@ class MainViewController: UIViewController, Storyboardable {
     
     @IBOutlet var mainLabel: UILabel! {
         didSet {
-            mainLabel.text = viewModel?.login ?? "Degault"
+            mainLabel.text = "Hello \(viewModel?.login ?? "Default")"
         }
     }
     @IBOutlet var button: UIButton! {
@@ -28,7 +28,7 @@ class MainViewController: UIViewController, Storyboardable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+          
     }
     
     @IBAction func aboutButtonPressed(_ sender: UIButton) {
