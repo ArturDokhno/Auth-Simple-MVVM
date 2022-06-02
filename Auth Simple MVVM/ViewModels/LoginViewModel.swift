@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ViewModel {
+class LoginViewModel {
     var statusText = Dynamic("")
     var statusColor = Dynamic(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))
     

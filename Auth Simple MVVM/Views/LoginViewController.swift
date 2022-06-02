@@ -7,13 +7,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
     
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var statusLabel: UILabel!
     
-    var viewModel = ViewModel()
+    var viewModel = LoginViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
