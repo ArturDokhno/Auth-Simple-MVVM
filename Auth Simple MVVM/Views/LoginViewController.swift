@@ -12,6 +12,14 @@ class LoginViewController: UIViewController, Storyboardable {
     @IBOutlet var loginTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var loginButton: UIButton! {
+        didSet {
+            loginButton.backgroundColor = .blue
+            loginButton.tintColor = .white
+            loginButton.layer.cornerRadius = 10
+            loginButton.clipsToBounds = true
+        }
+    }
     
     var viewModel: LoginViewModel?
     var coordinator: AppCoordinator?
@@ -25,6 +33,10 @@ class LoginViewController: UIViewController, Storyboardable {
     @IBAction func loginButtonPressed(_ sender: Any) {
         viewModel! .userButtonPressed(login: (loginTextField.text ?? ""),
                                     password: (passwordTextField.text ?? ""))
+        if viewModel!.isLoggedIn {
+            coordinator?.isLoggedIn = viewModel!.isLoggedIn
+            coordinator?.showMain(login: loginTextField.text ?? "")
+        }
     }
     
     func bindViewModel() {
